@@ -1,0 +1,435 @@
+/*=============================================
+	Custom CSS to Make 5 column Grid layout
+  =============================================
+*/
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px; }
+
+.col-xs-15 {
+  width: 20%;
+  float: left; }
+
+@media (min-width: 768px) {
+  .col-sm-15 {
+    width: 20%;
+    float: left; } }
+@media (min-width: 992px) {
+  .col-md-15 {
+    width: 20%;
+    float: left; } }
+@media (min-width: 1200px) {
+  .col-lg-15 {
+    width: 20%;
+    float: left; } }
+/* Mobile Devices Single Column*/
+@media (max-width: 480px) {
+  .col-mob-12 {
+    width: 100%; } }
+/* To Fix dropdown issue*/
+@media (max-width: 769px) {
+  .dropdown {
+    position: static; } }
+/* To remove horizontal scolling*/
+.row {
+  margin: 0px; }
+
+.clear {
+  clear: both; }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px; }
+
+/*
+----------------
+	Navbar CSS
+----------------
+*/
+.dropdown {
+  margin: 13px 0px; }
+
+#profile-dropdown {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 20px; }
+
+#profile-container {
+  width: 400px;
+  top: 30px; }
+  @media (max-width: 769px) {
+    #profile-container {
+      top: 98%; } }
+  #profile-container .img-container, #profile-container .user-container {
+    padding: 0px; }
+  #profile-container #profile-img {
+    width: 96px;
+    height: 96px;
+    display: block;
+    margin: 10px auto; }
+  #profile-container .missing-user-profile {
+    background-color: #c2c2c2;
+    font-family: 'Peddana', serif;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    display: block;
+    height: 100%;
+    font-size: 50px;
+    line-height: 100px;
+    border-radius: 10%; }
+  #profile-container #user-detail h4 {
+    font-family: 'Peddana', serif;
+    font-weight: bold;
+    font-size: 26px;
+    margin: 10px auto 5px auto; }
+  #profile-container #user-detail h5 {
+    margin-top: -5px; }
+  #profile-container #profile-btn {
+    margin-top: 15px; }
+  #profile-container .btn-success {
+    background-color: #FF3366;
+    border-color: #FF3366;
+    background-image: none;
+    word-spacing: 3px;
+    border-radius: 0px; }
+    #profile-container .btn-success:hover {
+      background-color: #F75079; }
+  #profile-container hr {
+    margin-top: 10px;
+    margin-bottom: 15px; }
+  #profile-container #profile-list {
+    list-style-type: none;
+    padding: 0px;
+    margin-left: 5px; }
+    #profile-container #profile-list li {
+      margin-bottom: 0px; }
+      #profile-container #profile-list li a {
+        color: #464444;
+        font-family: 'Peddana', serif;
+        font-size: 24px;
+        display: block; }
+        #profile-container #profile-list li a:hover {
+          text-decoration: none;
+          color: #ADA6A6; }
+
+/*.uparrow{
+	border-color: transparent;
+	border-bottom-color: #fff;
+	border-style: dashed dashed solid;
+	border-width: 0 8.5px 8.5px;
+	display: none;
+	position: absolute;
+	left: 85px;
+	top: 26px;
+	z-index: 1;
+	height: 0;
+	width: 0;
+} */
+/*
+-----------------------
+	Home Page Main Container CSS
+-----------------------
+*/
+#main {
+  margin-top: 10px;
+  position: relative;
+  /*Add ICON*/
+  /*Heading Class*/
+  /*Toggle Dropdow*/
+  /*Thumbnail Images*/ }
+  #main #add-icon-row {
+    position: fixed;
+    top: 68px;
+    right: 1%; }
+    @media (max-width: 480px) {
+      #main #add-icon-row {
+        right: -35px; } }
+    #main #add-icon-row #add-icon {
+      width: 65%; }
+  #main .heading {
+    width: 300px;
+    display: block;
+    margin: 20px auto 10px auto;
+    position: relative;
+    cursor: pointer; }
+    @media (max-width: 480px) {
+      #main .heading {
+        width: 200px;
+        font-size: 20px; } }
+    #main .heading .edit {
+      position: absolute;
+      width: 10%;
+      display: none;
+      margin-left: 15px;
+      margin-top: 5px; }
+      @media (max-width: 480px) {
+        #main .heading .edit {
+          margin-left: 5px;
+          margin-top: 0px; } }
+  #main .link-img {
+    width: 3%;
+    background-color: #333;
+    margin-bottom: 20px; }
+    @media (max-width: 769px) {
+      #main .link-img {
+        width: 5%; } }
+  #main .link-img-right {
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 97%;
+    width: 5%; }
+  #main .thumbnail {
+    position: relative;
+    overflow: hidden;
+    padding: 0px; }
+    #main .thumbnail .caption-img {
+      width: 100%;
+      border-bottom: 1px solid rgba(51, 51, 51, 0.19);
+      position: relative; }
+      #main .thumbnail .caption-img .caption {
+        position: absolute;
+        top: 0;
+        right: 0;
+        /*background: url(img/smiley_01.png);*/
+        background-color: rgba(0, 0, 0, 0.82);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 30% 20%;
+        width: 100%;
+        height: 100%;
+        padding: 2%;
+        display: none;
+        text-align: center;
+        color: #fff !important;
+        z-index: 2; }
+        #main .thumbnail .caption-img .caption .select-btn {
+          padding: 8% 10%;
+          font-family: 'Open sans', sans-serif;
+          font-size: 18px;
+          font-weight: 100;
+          position: absolute;
+          width: 67%;
+          height: 33%;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto auto; }
+          @media (max-width: 1200px) {
+            #main .thumbnail .caption-img .caption .select-btn {
+              font-size: 16px; } }
+          @media (max-width: 990px) {
+            #main .thumbnail .caption-img .caption .select-btn {
+              font-size: 22px; } }
+          @media (max-width: 650px) {
+            #main .thumbnail .caption-img .caption .select-btn {
+              font-size: 19px; } }
+          @media (max-width: 500px) {
+            #main .thumbnail .caption-img .caption .select-btn {
+              font-size: 14px; } }
+          @media (max-width: 480px) {
+            #main .thumbnail .caption-img .caption .select-btn {
+              font-size: 22px; } }
+          @media (max-width: 769px) {
+            #main .thumbnail .caption-img .caption .select-btn {
+              padding: 3% 9%;
+              font-family: 'Open sans', sans-serif;
+              font-weight: 100;
+              position: absolute;
+              width: 50%;
+              height: 20%;
+              left: 0;
+              right: 0;
+              top: 0;
+              bottom: 0;
+              margin: auto auto; } }
+        #main .thumbnail .caption-img .caption .label-default {
+          background-color: rgba(56, 52, 52, 0.39);
+          border: 1px solid #fff; }
+      #main .thumbnail .caption-img img {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+        padding: 4px; }
+    #main .thumbnail .smiley-text {
+      font-family: 'Open sans',sans-serif;
+      font-size: 15px;
+      font-weight: normal; }
+      @media (max-width: 769px) {
+        #main .thumbnail .smiley-text {
+          font-size: 20px; } }
+
+/*
+----------------------------------
+Objects Page CSS
+----------------------------------
+*/
+/*Search Bar in Objects Page*/
+#searchBar {
+  margin-top: 10px;
+  margin-bottom: 30px; }
+
+#searchBtn {
+  margin-top: -2px; }
+
+/*
+----------------------------------
+Widget Page CSS
+----------------------------------
+*/
+#page-links {
+  float: left;
+  margin-left: 50px;
+  padding-top: 15px; }
+  @media (max-width: 480px) {
+    #page-links {
+      margin-left: 10px; } }
+  #page-links .objects-links {
+    float: left; }
+    #page-links .objects-links a {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700; }
+      @media (max-width: 400px) {
+        #page-links .objects-links a {
+          font-size: 12px; } }
+  #page-links span {
+    float: left;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 10px; }
+    @media (max-width: 400px) {
+      #page-links span {
+        font-size: 12px;
+        margin-left: 5px;
+        margin-top: 3px; } }
+
+.widget-heading {
+  background-color: #F3F3F3;
+  width: 300px;
+  height: 85px;
+  display: inline-block;
+  box-shadow: -2px 2px 4px;
+  margin: 30px 0px 15px 0px;
+  font-family: 'Open sans', sans-serif; }
+  @media (max-width: 480px) {
+    .widget-heading {
+      width: 300px;
+      height: 80px; } }
+  .widget-heading .widget-heading-image {
+    float: left;
+    width: 30%;
+    padding: 0px;
+    margin-left: -10px; }
+    .widget-heading .widget-heading-image img {
+      width: 77%; }
+    .widget-heading .widget-heading-image ul {
+      list-style-type: none;
+      margin-top: -10px;
+      margin-bottom: -5px;
+      padding: 0px; }
+      .widget-heading .widget-heading-image ul li {
+        display: inline-block;
+        padding: 0px;
+        margin: 0px; }
+    .widget-heading .widget-heading-image .li-1 {
+      width: 37%;
+      height: 5px;
+      background-color: #627AE4; }
+    .widget-heading .widget-heading-image .li-2 {
+      width: 38%;
+      height: 5px;
+      background-color: #F99E00; }
+  .widget-heading .widget-heading-text {
+    color: #333;
+    float: left;
+    width: 70%;
+    padding: 5px 0px; }
+    @media (max-width: 480px) {
+      .widget-heading .widget-heading-text {
+        padding: 5px 0px; } }
+
+.widget-option {
+  position: relative;
+  overflow: hidden;
+  padding: 0px;
+  border: 1px solid #333;
+  margin-bottom: 20px;
+  box-shadow: -2px 2px 4px;
+  font-family: 'Open sans', sans-serif; }
+  .widget-option .widget-option-img {
+    width: 40%;
+    border-right: 1px solid #333;
+    position: relative;
+    float: left;
+    padding: 2% 4%; }
+    .widget-option .widget-option-img .widget-option-shadow {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.82);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 30% 20%;
+      width: 100%;
+      height: 100%;
+      padding: 2%;
+      display: none;
+      text-align: center;
+      color: #fff !important;
+      z-index: 2; }
+      .widget-option .widget-option-img .widget-option-shadow .btn-view {
+        margin-top: 33%;
+        width: 60%; }
+        @media (max-width: 990px) and (min-width: 767px) {
+          .widget-option .widget-option-img .widget-option-shadow .btn-view {
+            width: 80%; } }
+        @media (max-width: 480px) {
+          .widget-option .widget-option-img .widget-option-shadow .btn-view {
+            width: 80%; } }
+        @media (max-width: 400px) {
+          .widget-option .widget-option-img .widget-option-shadow .btn-view {
+            font-size: 10px; } }
+      .widget-option .widget-option-img .widget-option-shadow .btn-primary {
+        background-color: rgba(56, 52, 52, 0.39);
+        border: 1px solid #fff;
+        background-image: none; }
+    .widget-option .widget-option-img img {
+      width: 100%; }
+  .widget-option .widget-option-text {
+    float: left;
+    width: 60%;
+    padding: 2%; }
+    .widget-option .widget-option-text h2 {
+      font-size: 30px; }
+      @media (max-width: 990px) and (min-width: 769px) {
+        .widget-option .widget-option-text h2 {
+          font-size: 22px;
+          font-weight: 500;
+          margin: 5px 0px; } }
+      @media (max-width: 400px) {
+        .widget-option .widget-option-text h2 {
+          font-size: 18px;
+          margin: 2px 0px; } }
+    .widget-option .widget-option-text p {
+      font-size: 14px; }
+      @media (max-width: 400px) {
+        .widget-option .widget-option-text p {
+          font-size: 12px; } }
+
+/*# sourceMappingURL=main.css.map */

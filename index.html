@@ -1,0 +1,822 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Help</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="gridDesign/css/bootstrap.min.css">
+		<link rel="stylesheet" href="gridDesign/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="gridDesign/css/bootstrap.vertical-tabs.css">
+		<link rel="stylesheet" href="gridDesign/css/main.css">
+		<link rel="stylesheet" href="gridDesign/css/profile.css">
+		<script src="gridDesign/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+		<!-- Google Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Peddana' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+			#main .thumbnail .caption-img .caption .select-btn 
+			{
+				padding: 5% 10%;
+			}
+
+			.tab-pane .sub-menu
+			{
+				margin-left:20px;
+				display:inline;
+			}
+			body
+			{
+				padding-top:0px;
+			}
+			.tabs-left > li a {
+				color: #fff;
+				padding: 20px 15px;
+				font-size: 14px; }
+
+		</style>
+		<link href="css/helpsubmenu.css" rel="Stylesheet" type="text/css" />
+	</head>
+	<body>
+
+		<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+		<div id="main" class="container-fluid">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+
+				<div id="tabs-left-container"  class="col-xs-2 col-sm-2 col-md-2">
+					<!-- required for floating -->
+					<!-- Nav tabs -->
+
+					<!--<ul id="drilldown" class="nav nav-tab tabs-left">
+<li><a data-toggle="tab" href="#overview">menu item 1</a></li>
+<li><a data-toggle="tab" href="#chart">menu item 2</a></li>
+<li><a href="#dashboard" data-toggle="collapse" data-target="#drilldown-1">menu item 3</a>
+<div style="padding-left:0px;">
+<ul id="drilldown-1" class="nav nav-tab tabs-left collapse">
+<li><a data-toggle="tab" href="#createdash">CREATE</a></li>
+<li><a data-toggle="tab" href="#editdash">EDIT</a></li>
+<li><a data-toggle="tab" href="#sharedash">SHARE</a></li>
+</ul>
+</div>
+</li>
+<li><a href="#datasource">menu item 4</a></li>
+<li><a href="#">menu item 5</a></li>
+
+</ul>-->
+
+					<ul class="nav nav-tabs tabs-left">
+						<li class="active"><a href="#overview" data-toggle="tab">OVERVIEW</a></li>
+
+						<li><a href="#chart" data-toggle="tab">CHARTS</a>
+							<ul class="submenu">
+								<li><a href="#createchart" data-toggle="tab">CREATE CHART</a></li>
+								<li><a href="#advancedchart" data-toggle="tab">ADVANCED FUNCTIONS</a></li>
+								<li><a href="#charttypes" data-toggle="tab"> CHART TYPES</a></li>
+							</ul> 
+						</li>
+
+						<li><a href="#dashboard" data-toggle="tab">DASHBOARD</a>
+							<ul class="submenu">
+								<li><a href="#createdash" data-toggle="tab">CREATE DASHBOARD</a></li>
+								<li><a href="#editdash" data-toggle="tab">EDIT DASHBOARD</a></li>
+								<li><a href="#sharedash" data-toggle="tab"> SHARE DASHBOARD</a></li>
+								<li><a href="#slideshow" data-toggle="tab"> SLIDE SHOW</a></li>
+								<li><a href="#advanceddash" data-toggle="tab"> ADVANCED FUNCTIONS</a></li>
+							</ul> 
+						</li>
+
+						<li><a href="#datasource" data-toggle="tab">DATA SOURCE</a>
+							<ul class="submenu">
+								<li><a href="#adddatabase" data-toggle="tab">ADD DATABASE CONNECTION</a></li>
+								<li><a href="#editdatabase" data-toggle="tab">EDIT DATABASE CONNECTION</a></li>
+								<li><a href="#deletedatasource" data-toggle="tab">SERVER CONNECTION</a></li>
+							</ul>                       
+						</li>
+						<li><a href="#users" data-toggle="tab">USERS</a>
+							<ul class="submenu">
+								<li><a href="#addUsers" data-toggle="tab">ADD USER</a></li>
+								<li><a href="#editUsers" data-toggle="tab">EDIT USER</a></li>
+								<!--  <li><a href="#deleteUsers" data-toggle="tab">DELETE USER</a></li>-->
+							</ul>
+						</li>  
+						<li><a href="#roles" data-toggle="tab">ROLES</a>  
+							<ul class="submenu">
+								<li><a href="#addRole" data-toggle="tab">ADD ROLE</a></li>
+								<li><a href="#editRole" data-toggle="tab">EDIT ROLE</a></li>
+								<li><a href="#deleteRole" data-toggle="tab">DELETE ROLE</a></li>
+							</ul>      
+						</li>
+
+						<!-- <li><a href="#sqlserver" data-toggle="tab">DATA SOURCE</a>
+<ul class="submenu">
+<li><a href="#mssql" data-toggle="tab">MS SQL</a></li>
+<li><a href="#mysql" data-toggle="tab">MySQL</a></li>
+</ul>
+</li>
+<li><a href="#chart" data-toggle="tab">CHARTS</a></li>-->
+					</ul>
+				</div>
+				<div id="right-container" class="col-xs-10 col-sm-10 col-md-10" style="font-size:medium"  >
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<!--  <div class="tab-pane nav" id="connection">
+<h1>
+CONNECTION
+</h1>
+<p>
+To generate a chart/report, Roosboard needs authorization to connect your MySQL
+or SQL Server database.</p>
+<br>
+<img src="Helpimg/ConMainpage.PNG" class="img-responsive" alt="profile">
+<br>
+<br>                        
+</div>
+<div id="addconn"  class="tab-pane" >
+<h3>
+ADDING A CONNECTION</h3>
+<p>
+Connection can be added in the <kbd>Connection</kbd> tab in your account settings.</p>
+<ul>
+<li>Login to your Roosboard account</li>
+<img src="Helpimg/Login.png" class="img-responsive" alt="login">
+<br>
+<br>
+
+<li>In the top right corner, click your initials and from the dropdown, select <kbd>
+Profile</kbd></li>
+<br>
+<img src="Helpimg/Profile.png" class="img-responsive" alt="profile">
+<br>
+<br>
+
+<li>Click <kbd>Connection</kbd></li>
+<br>
+<img src="Helpimg/Profile.png" class="img-responsive" alt="profile">
+<br>
+<br>
+<li>Click the <kbd>+</kbd> icon on top</li>
+<li>Select the server name.</li>                             
+<li>Enter connection name which can anything that is used to identify the connection</li>
+<li>Enter IP Address/URL, Database name, User Name and Password</li>
+<li>Default Port for SQL server 1433. Default for MySQL is XXXX</li>                            
+<li>Click <kbd>Submit</kbd>.</li>
+<br>
+<img src="Helpimg/ConAdd.png" class="img-responsive" alt="connection_details">
+<br>
+<br>
+
+</ul>
+</div>
+<div id ="editconn" class="tab-pane">
+<h3>
+REVOKE THE CONNECTION</h3>
+<p>
+Users can be added in the <kbd>Connection</kbd> tab in your account settings.</p>
+<ul>
+<li>Login to your Roosboard account</li>
+
+<li>In the top right corner, click your initials and from the dropdown, select <kbd>
+Profile</kbd></li>
+
+<li>Click <kbd>Connection Edit</kbd></li>
+<br>
+<img src="Helpimg/ConEdit.png" class="img-responsive" alt="connection">
+<br>
+<br>
+<li>Click the <kbd>Delete</kbd> icon and then click <kbd>Yes</kbd> on confirmation.</li>
+<br>
+<img src="Helpimg/ConnDelete.PNG" class="img-responsive" alt="connection_delete">
+<br>
+<br>
+<li>Access to the App is revoked.</li>
+</ul>
+</div>-->
+
+						<div class="tab-pane" id="users">
+							<h1>DEFINING USERS</h1>
+							<br />                     
+							<p>There are two types of users</p>
+							<ul>
+								1) Admin
+								<br>
+								2) Non-Admin
+							</ul>
+							<p>
+								<kbd>Admin</kbd> users are able to create, edit reports and dashboards and also
+								can add new users. Admin user can able to define roles and can able to assign roles
+								to users.</p>
+							<p>
+								<kbd>Non-Admin</kbd> users are able to login to view and specific dashboards based
+								on the role which they have been granted access to.</p>
+							<br>
+							<img src="Helpimg/UserSelectMainpage1.png" class="img-responsive" alt="user_admin">
+							<br>
+							<br>
+
+
+						</div>
+						<div id="addUsers" class="tab-pane">
+
+							<h1>ADDING A USERS</h1>
+							<br /> 
+							<p>
+								You can be add new user in the <kbd>Users</kbd> tab in your account settings.</p>
+							<ul>                                
+								<li>Click <kbd>Users</kbd>.</li>                               
+								<li>Click the <kbd>+</kbd> icon on top.</li>                                 
+								<li>Enter the Email Address, First Name, Last Name, Password, Phone no.</li>                               
+								<li>Select role type <kbd>Admin</kbd>, 
+									if user is admin otherwise select the specific role.</li>                   
+								<br>
+								<img src="Helpimg/UserAdd.PNG" class="img-responsive" alt="user">
+								<br>
+								<br>                
+								<li>Click <kbd>Submit</kbd>.</li>
+							</ul>                            
+							<p>
+								An email will be sent to that email address confirming that you have given the access
+								to the dashboard.</p>
+							<p>
+								<strong>Note:</strong>It's not currently possible to add an email address that already
+								belongs to another Roosboard account, so the user you invite will be prompted to
+								sign up for a new Roosboard account.</p>
+						</div>
+						<div id="editUsers" class="tab-pane">
+							<h1>EDIT USER</h1>
+							<br /> 
+							<p>You can be edit users in the <kbd>Users</kbd> tab in your account settings.</p>
+							<ul>                                     
+								<li>Click <kbd>Users</kbd></li>                                
+								<li>Click the <kbd>SELECT</kbd> button on user type. </li>                                                           
+								<br>
+								<img src="Helpimg/UserEdit1.PNG" class="img-responsive" alt="user_admin">
+								<br>
+								<br>
+								<li>Edit the First Name, Last Name, Password, Phone no.</li>  
+								<li>Change any user type.</li>
+								<li>Click <kbd>Update</kbd>.</li>
+								<br>
+								<img src="Helpimg/UserEdit.PNG" class="img-responsive" alt="user_admin">
+								<br>
+								<br>
+							</ul>
+							<p>
+								An email will be sent to that email address confirming that you have given the access
+								to the dashboard.</p>
+							<p>
+								<strong>Note:</strong>It's not currently possible to add an email address that already
+								belongs to another Roosboard account, so the user you invite will be prompted to
+								sign up for a new Roosboard account.</p>
+						</div>
+						<div id="deleteUsers" class="tab-pane">
+							<h1>DELETE A USER</h1>
+							<br /> 
+							<ul>
+								<li>Click the Delete button for which User you want to delete.</li>
+								<li>If you click the delete button it will show the confirmation dialogue<kbd>Yes</kbd>.</li>
+								<li>If you click the <kbd>Yes</kbd> on confirmation dialoge,it will delete the corresponding User.otherwise nothing will be deleted.</li>
+								<br>
+								<img src="Helpimg/RoleDelete.png" class="img-responsive" alt="role_page">
+								<br>
+								<br>
+							</ul>
+						</div>
+
+						<div class="tab-pane" id="roles">
+							<h1>DEFINING ROLES</h1>
+							<br /> 
+							<p>There are two types of roles.</p>
+							<ul>
+								1) Display
+								<br>
+								2) Edit
+							</ul>
+							<p>
+								<kbd>Edit</kbd> users are able to login to view and edit specific dashboards and
+								reports based on the role which they have been granted access to.</p>
+							<p>
+								<kbd>Display</kbd> users are able to login to view and specific dashboards and
+								reports based on the role which they have been granted access to.</p>
+							<br>
+							<img src="Helpimg/RoleMainpage.PNG" class="img-responsive" alt="role_page">
+							<br>
+							<br>         
+
+						</div>
+						<div id="addRole" class="tab-pane">
+							<h1>ADDING A ROLE</h1>
+							<br /> 
+							<p>You can be add new role in the <kbd>Roles</kbd> tab in your account settings.</p>
+							<ul>
+
+								<li>Click <kbd>Roles</kbd>.</li>
+								<li>Click the <kbd>+</kbd> icon on top.</li>
+								<li>Enter the Role name and select User Role type as <kbd>Display</kbd> or <kbd>Edit</kbd>.</li>
+								<li> Select the User.</li>                                   
+								<li>Select dashboards and reports that you are granting an access to the role.</li>
+								<li>Click <kbd>Save</kbd>.</li>
+								<br>
+								<img src="Helpimg/RoleAdd.PNG" class="img-responsive" alt="role_page">
+								<br>
+								<br>
+								</div>
+							<div id="editRole" class="tab-pane">
+
+								<h1>EDIT A ROLE</h1>
+								<br /> 
+								<p>You can be edit role in the <kbd>Roles</kbd> tab in your account settings.</p>
+								<ul>
+									<li>Edit the Role name and select User Role type as <kbd>Display</kbd> or <kbd>Edit</kbd></li>
+									<li> Change the User</li>                                    
+									<li>Change any dashboards and reports that you are granting an access to the role.</li>
+									<li>Click <kbd>Update</kbd>.</li>
+									<br>
+									<img src="Helpimg/RoleEdit.PNG" class="img-responsive" alt="role_page">
+									<br>
+									<br>
+								</ul>
+							</div>   
+							<div id="deleteRole" class="tab-pane">
+								<h1>DELETE A ROLE</h1>
+								<br /> 
+								<p>You can be delete role in the <kbd>Roles</kbd> tab in your account settings.</p>
+								<ul>
+
+									<li>Click the Delete button for which role you want to delete.</li>
+									<li>If you click the delete button it will show the confirmation dialogue<kbd>Yes</kbd>.</li>
+									<li>If you click the <kbd>Yes</kbd> on confirmation dialoge,it will delete the corresponding role.otherwise nothing will be deleted.</li>
+									<br>
+									<img src="Helpimg/RoleDelete.png" class="img-responsive" alt="role_page">
+									<br>
+									<br>
+								</ul>
+							</div>
+
+							<div class="tab-pane" id="datasource">
+								<h1>DATA SOURCE</h1>
+								<br /> 
+								<p>
+									To generate a chart/report, Roosboard needs authorization to connect your MySQL
+									or SQL Server database.</p>
+
+								<br>
+								<img src="Helpimg/ConMainpage.PNG" class="img-responsive" alt="profile">
+								<br>
+								<br>    
+							</div>
+							<div class="tab-pane" id="adddatabase">
+								<h1>ADD DATA SOURCE</h1>
+								<br /> 
+								<p>New database connection can be add in the <kbd>DATA SOURCE</kbd> tab in your account settings.</p>
+								<ul>      
+									<li>Click <kbd>DATA SOURCE</kbd>.</li>                                 
+									<li>Click the <kbd>+</kbd> icon on top</li>
+									<li>Select the server name.</li>                             
+									<li>Enter connection name which can anything that is used to identify the connection.</li>
+									<li>Enter IP Address/URL, Database name, User Name and Password.</li>
+									<li>Default Port for SQL server 1433. Default for MySQL is XXXX.</li>                            
+									<li>Click <kbd>Submit</kbd>.</li>
+									<br>
+									<img src="Helpimg/ConAdd.png" class="img-responsive" alt="connection_details">
+									<br>
+									<br>
+
+								</ul>                       
+
+							</div>
+							<div class="tab-pane" id="editdatabase">
+								<h1>EDIT DATA SOURCE</h1>
+								<br /> 
+								<p>You can be edit the Database <kbd>DATA SOURCE</kbd> tab in your account settings.</p>
+								<ul>
+
+									<li>Click <kbd>Edit</kbd>.</li>
+									<li>Edit connection name which can anything that is used to identify the connection.</li>
+									<li>Edit IP Address/URL, Database name, User Name and Password.</li>
+									<li>Default Port for SQL server 1433. Default for MySQL is XXXX.</li>  
+									<br>
+									<img src="Helpimg/ConEdit.png" class="img-responsive" alt="connection">
+									<br>
+									<br>
+									<li>Click the <kbd>Update</kbd> button.</li>                                 
+									<li>Then updated your database connection.</li>
+								</ul>
+							</div>
+							<div class="tab-pane" id="deletedatasource">
+
+								<h3>DELETE DATA BASE</h3>
+								<br /> 
+								<p>You can be delete database in the <kbd>Roles</kbd> tab in your account settings.</p>
+								<ul>
+									<li>Click the <kbd>Delete</kbd> icon and then click <kbd>Yes</kbd> on confirmation.</li>
+									<br>
+									<img src="Helpimg/ConnDelete.PNG" class="img-responsive" alt="connection_delete">
+									<br>
+									<br>
+									<li>Check your Data source page.</li>
+								</ul>
+
+							</div>
+
+							<div class="tab-pane" id="chart">
+								<h1>CHARTS</h1>
+
+								<br>
+								<img src="Helpimg/SearchChartDraw.png" class="img-responsive" alt="role_page">
+								<br>
+								<br>
+
+							</div>
+							<div id="createchart" class="tab-pane">
+								<h1>CREATE CHART</h1>
+
+								<br />
+								<ul>
+
+									<br>
+									<img src="Helpimg/SearchArrow.png" class="img-responsive" alt="role_page">
+									<br>
+									<br>                                              
+									<li>Click the <kbd><-</kbd> arrow icon on top.</li>
+									<li>Select the database.</li>  
+									<br>
+									<img src="Helpimg/SearchConSql.png" class="img-responsive" alt="role_page">
+									<br>
+									<br>  
+									<li>Enter the expression <kbd>Search</kbd> / <kbd>Enter</kbd> button.</li>   
+									<br>
+									<img src="Helpimg/SearchTypeFieldName.png" class="img-responsive" alt="role_page">
+									<br>
+									<br>   
+									<li>Display the chart. Default chart type is <mark><i>Column chart</i></mark>.</li> 
+
+									<li>Click <kbd>Pin</kbd> Icon.</li> 
+									<br>
+									<img src="Helpimg/SearchChartDraw1.png" class="img-responsive" alt="role_page">
+									<br>
+									<br>
+									<li>Choose the dashboard and place to your chart.</li>
+								</ul>
+							</div>
+							<div class="tab-pane" id="advancedchart">
+								<h1>ADVANCED FUNCTIONS</h1>
+								<br /> 
+								<p>Roosboard Advanced functions are four types.</p>
+								<ul>
+									<li>GROUP BY FUNCTIONS</li>
+									<li>FILTER</li>
+									<li>MAP OPTION</li>
+									<li>PIVOT TABLE</li></ul>
+								<br />
+								<ul>
+									<h3>GROUP BY FUNCTIONS</h3>
+									<br />
+									<li>Click <kbd>GroupBy Function.</kbd></li>
+									<br>
+									<img src="Helpimg/SearchChartAdv.png" class="img-responsive" alt="role_page">
+									<br>
+									<br>
+									<li>Selected integer values are follow Sum of,Avg of,Minimum of,Maximum of, Anyone you selected then chart is changed.</li>
+									<br>
+									<img src="Helpimg/Groupbysearch1.png" class="img-responsive" alt="role_page">
+									<br>
+									<br>
+									<li>Click the <kbd>Submit</kbd> button to change a main chart.</li>
+									<br>
+									<img src="Helpimg/Groupbysearch2.png" class="img-responsive" alt="role_page">
+									<br>
+									<br>
+
+									<h3>FILTER</h3>
+									<br />
+									<li>Click <kbd>Filter</kbd>.</li>
+									<br>
+									<img src="Helpimg/SearchChartAdv1.png" class="img-responsive" alt="role_page">
+									<br>
+									<br>
+									<li>Select any Expression.</li>
+									<li>Selected Expression values are Filter.</li>
+									<br>
+									<img src="Helpimg/Filtersearch1.png" class="img-responsive" alt="role_page">
+									<br>
+									<br>
+									<li>Click the <kbd>Submit</kbd> button to change a main chart.</li>
+									<br>
+									<img src="Helpimg/Filtersearch2.png" class="img-responsive" alt="role_page">
+									<br>
+									<br>
+
+									<h3>GEO MAP OPTIONS</h3>
+									<br />
+									<li>Click <kbd>Map Option</kbd>.</li>
+									<br>
+									<img src="Helpimg/SearchChartMapoption.png" class="img-responsive" alt="role_page">
+									<br>
+									<br> 	
+									<li>Roosboard supports three type of Geo Mapping option.</li>
+									<ul>
+										<li>Region Mapping option</li>  
+										<li>Marker Mapping option</li>
+										<li>Text Mapping option</li>    
+									</ul>
+									<li>Selected type Map options are split to Continent,Sub-Continent,Country wises.</li>
+									<br>
+									<img src="Helpimg/SearchChartMapoption2.png" class="img-responsive" alt="role_page">
+									<br>
+									<br>
+									<li>Choose the type and Click the <kbd>Submit</kbd> button to change a main chart.</li>
+								</ul>
+
+								<h3>PIVOT TABLE</h3>
+								<br />
+								<li>Click <kbd>Pivot Table</kbd>.</li>
+								<br>
+								<img src="Helpimg/SearchChartAdv2.png" class="img-responsive" alt="role_page">
+								<br>
+								<br>
+								<li>Select base(String Expression), Select core(Integer Expression).</li>
+								<li>Click <kbd>Check box</kbd> then changed Pivot table.</li>
+								<br>
+								<img src="Helpimg/Pivotsearch1.png" class="img-responsive" alt="role_page">
+								<br>
+								<br>
+								<li>Click <kbd>Submit</kbd> button to change a main chart.</li>
+
+							</div>                      
+							<div id="charttypes" class="tab-pane">
+								<h1>CHART TYPES</h1>
+								<br /> 
+								<P>Roosboard supports more than 20 different types of charts which includes basic chart types of <mark><i>Line, Bar, Column charts</i></mark> to see list of charts.</P>
+
+								<div class="col-xs-12 col-sm-12 col-md-12">
+									<h3>Area Chart</h3>
+									<div class="col-xs-12 col-sm-6 col-md-6"><img src="Helpimg/ChartType_Area.PNG" class="img-responsive" alt="Server_connection"></div>
+									<h3>Bar Chart</h3>
+									<div class="col-xs-12 col-sm-6 col-md-6"><img src="Helpimg/ChartType_Bar.PNG" class="img-responsive" alt="Server_connection"></div>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-12">
+									<h3>Bubble Chart</h3>
+									<div class="col-xs-12 col-sm-6 col-md-6"><img src="Helpimg/ChartType_Bobb.PNG" class="img-responsive" alt="Server_connection"></div>
+									<h3>Pie Chart</h3>
+									<div class="col-xs-12 col-sm-6 col-md-6"> <img src="Helpimg/ChartType_Pie.PNG" class="img-responsive" alt="Server_connection"></div>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-12">
+									<h3>Colunms Chart</h3>
+									<div class="col-xs-12 col-sm-6 col-md-6"><img src="Helpimg/ChartType_Col.PNG" class="img-responsive" alt="Server_connection"></div>
+								</div>
+								<!--          <img src="Helpimg/ChartType_Area.PNG" alt="Server_connection">
+<img src="Helpimg/ChartType_Bar.PNG" alt="Server_connection">
+<img src="Helpimg/ChartType_Bobb.PNG" alt="Server_connection">
+<img src="Helpimg/ChartType_Col.PNG" alt="Server_connection">
+<img src="Helpimg/ChartType_Pie.PNG" alt="Server_connection">-->
+								<br>
+								<br>   
+							</div>
+
+							<div class="tab-pane" id="dashboard">
+
+								<h3>DEFINING DASHBOARD</h3>
+								<br />
+								<p>In real-world terms, "dashboard" is another name for "progress report" or "report."
+									Often, the "dashboard" is displayed on a web page that is linked to a database which allows the report to be constantly updated.</p>
+								<br>
+								<img src="Helpimg/Dashboard.png" class="img-responsive" alt="role_page">
+								<br>
+								<br>
+
+							</div>
+							<div class="tab-pane" id="createdash">
+								<h1>CREATE DASHBOARD</h1>
+								<br /> 
+								<ul>                                                                      
+									<li>Click the <kbd>+</kbd> icon on top.</li>
+									<br>
+									<img src="Helpimg/createDashboard1.png" class="img-responsive" alt="role_page">
+									<br>
+									<br>
+									<br>
+									<img src="Helpimg/createDashboard2.png" class="img-responsive" alt="role_page">
+									<br>
+									<br>
+									<li>Then select your charts and click the <kbd>OK</kbd> button.</li> 
+									<li>Your selected charts now added on dashboard.</li>
+									<li>Enter Dashboard title.</li>
+									<br>
+									<img src="Helpimg/createDashboard3.png" class="img-responsive" alt="role_page">
+									<br>
+									<br>
+									<li>Click the <kbd>Save</kbd> button your dashboard saved.</li>
+								</ul>
+							</div>
+							<div class="tab-pane" id="editdash">
+								<h1>EDIT DASHBOARD</h1>
+								<br /> 
+								<ul>                                   
+									<li>Select dashboard.</li>
+									<br>
+									<img src="Helpimg/EditDashboard.png" class="img-responsive" alt="role_page">
+									<br>
+									<br>
+									<li>Click the <kbd>Edit</kbd> icon on top.</li>
+									<li>Edit dashboard name, add new charts, remove charts.</li>
+
+									<br>
+									<img src="Helpimg/EditDashboard1.png" class="img-responsive" alt="role_page">
+									<br>
+									<br>
+									<li>Click the <kbd>Update</kbd> button your dashboard updated.</li>
+								</ul>
+							</div>
+							<div class="tab-pane" id="sharedash">
+								<h1>SHARE DASHBOARD</h1>
+								<br /> 
+								<ul>
+									<li>Click the <kbd>Share</kbd>  icon on top.</li>
+									<br>
+									<img src="Helpimg/ShareDashboard.png" class="img-responsive" alt="role_page">
+									<br>
+									<br>  
+									<li>Share your dashboard view link to Email.</li> 
+									<li>Click the <kbd>Public URL</kbd>  icon on top.</li>	
+									<li>Enter the URL.</li>
+									<br>
+									<img src="Helpimg/UrlDashboard1.png" class="img-responsive" alt="role_page">
+									<br>
+									<br>  
+									<li>Click <kbd>Generate</kbd>.</li>
+									<br>
+									<img src="Helpimg/UrlDashboard2.png" class="img-responsive" alt="role_page">
+									<br>
+									<br>  
+									<li>Generated the dashboard view link, Use this link to view your dashboard without login to your Roosboard account.</li>
+								</ul>
+							</div>                          
+							<div class="tab-pane" id="slideshow">
+								<h1>SLIDE SHOW</h1>
+								<br /> 
+								<p>A slide show is a presentation of a dashboard that contains collection of charts are prearranged sequence.</p> 
+								<p>The changes may be regular intervals or they may be manually controlled by a user. </p>
+
+								<li>Click <kbd>SLIDE SHOW</kbd> tab in your account settings.</li> 
+								<li>Select slide show timer time Minutes and Seconds.</li>
+								<li>Select your Dashboards.</li>
+								<br>
+								<img src="Helpimg/slideshow.png" class="img-responsive">
+								<br>
+								<br>  
+								<li>Click the <kbd>Submit</kbd> button. Saved your slide show.</li>
+
+
+							</div>
+							<div class="tab-pane" id="advanceddash">
+								<h1>ADVANCED FUNCTIONS</h1>
+								<br />
+								<p>Roosboard gives advanced dashboard functions.</P>
+
+							<ul>
+								<li>Drill down </li>
+								<li>Cross over </li>
+								<li>Full size </li>
+								<li>Delete </li>
+							</ul>
+							<br>
+							<img src="Helpimg/AadvancedDashboard1.png" class="img-responsive">
+							<br>
+							<br>  
+							<li>Select dashboard.</li>
+							<li>Click the <kbd>Edit</kbd> icon on top.</li>	
+							<li>Select any charts.</li>
+							<li>Click the <kbd>></kbd> icon.</li>
+							<br>
+							<img src="Helpimg/AadvancedDashboard.png" class="img-responsive">
+							<br>
+							<br>  
+
+							<h3>DRILL DOWN</h3>
+							<br />
+							<p>Drill down means to move from one chart to another chart, information to detailed data by focusing in on something.</p>
+							<p>"drilling-down" may involve clicking on some representation in order to reveal more detail.</p> 
+
+							<p> if you need a Drill down function.</p>
+
+							<li>Click the <kbd>Drill down</kbd> icon.</li>
+							<br>
+							<img src="Helpimg/Drilldown2.png" class="img-responsive">
+							<br>
+							<br>
+							<p>Before the Drill down.</p>  
+							<li>Select SourceID, TargetID.</li>
+							<li>Choose common Expression name in both select box.</li>
+							<!-- <p>   Note: Displayed expressions are followed by your hole dashboard charts expression name </p>-->
+							<br>
+							<img src="Helpimg/Drilldown1.png" class="img-responsive">
+							<br>
+							<br>
+
+							<li>Click <kbd>OK</kbd> button.</li>
+							<br>
+							<img src="Helpimg/Drilldown3.png" class="img-responsive">
+							<br>
+							<br>  
+							<p>After the Drill down.</p>
+							<li>Click to your destination point(Required value) then chart is changed by Drill down function.</li>
+							<li>Click <kbd>Reload</kbd> icon previous chart is displayed, and change your destination point(Required value). </li>
+
+							<h3>CROSS OVER</h3>
+							<br />
+							<p>A point or values of crossing from one chart to the another chart.</p>
+							<p> if you need a Cross over function.</p>
+
+							<li>Click the <kbd>Cross over</kbd> icon.</li>
+							<br>
+							<img src="Helpimg/crossover1.png" class="img-responsive">
+							<br>
+							<br>
+							<p>Before the cross over.</p> 
+							<li>Select SourceID, TargetID.</li>
+							<li>Choose any Expression name in select box.</li>
+							<!-- Note: Displayed expressions are followed by your hole dashboard charts expression name -->
+							<br>
+							<img src="Helpimg/crossover.png" class="img-responsive">
+							<br>
+							<br>
+
+							<li>Click <kbd>OK</kbd> button</li>	                       
+							<br>
+							<img src="Helpimg/crossover2.png" class="img-responsive">
+							<br>
+							<br>
+							<p>After the cross over</p>
+							<li>Click to your destination point(Required value) then chart is changed by Cross over function</li>
+							<li>Click <kbd>Reload</kbd> icon previous chart is displayed, and change your destination point(Required value). </li>
+							<h3>FULL SIZE</h3>
+							<br />
+							<li>Click the <kbd>></kbd> icon.</li>
+							<li>Click the <kbd>Full size</kbd> icon.</li>
+							<li>Your charts is dispalyed full size.</li>
+							<li>Use <kbd>Esc</kbd> button on your keyboard.</li>
+
+							<h3>DELETE</h3>
+							<br />
+							<li>Click the <kbd>></kbd> icon.</li>
+							<li>Click the <kbd>X</kbd> icon.</li>
+							<li>Your Current charts is delete.</li>
+
+
+						</div>
+					</div>
+				</div>
+
+			</div> 
+		</div>
+
+		<!-- /.container -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script>        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+		<script src="gridDesign/js/vendor/bootstrap.min.js"></script>
+		<script src="gridDesign/js/main.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function () {
+				//$("[rel='tooltip']").tooltip();    
+
+				$('.thumbnail').hover(
+					function () {
+						$(this).find('.caption').fadeIn(450); //.fadeIn(250)
+						//$(this).find('.caption').attr('height',$(this).find('.caption-img').height());
+					},
+					function () {
+						$(this).find('.caption').fadeOut(450); //.fadeOut(205)
+					}
+				);
+
+				$('.heading').hover(
+					function () {
+						$(this).find('.edit').css('display', 'inline-block');
+					}, function () {
+						$(this).find('.edit').css('display', 'none');
+					});
+
+
+				// Change label text on dropdown value change
+				$('#country').on('change', function () {
+					if (this.value == 0) {
+						$('.custom-label').animate({ top: '0px' });
+					}
+					else {
+						$('.custom-label').animate({ top: '-23px' });
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
+
